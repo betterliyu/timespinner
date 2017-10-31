@@ -1,7 +1,7 @@
 {
-  "name": "bwidget-timepicker",
+  "name": "bwidget-timespinner",
   "version": "1.0.0",
-  "description": "a javascript timepicker widget",
+  "description": "a javascript timespinner widget",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,11 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/betterliyu/timepicker.git"
+    "url": "git+https://github.com/betterliyu/timespinner.git"
   },
   "keywords": [
-    "timepicker",
-    "time"
+    "timespinner",
+    "time",
+    "spinner"
   ],
   "author": "betterliyu",
   "license": "MIT",
@@ -26,11 +27,8 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
     "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-eslint": "^4.0.0",
     "gulp-minify-css": "^1.2.4",
     "gulp-rename": "^1.2.2",
-    "lodash": "^4.17.4",
     "rollup": "^0.50.0",
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-commonjs": "^8.2.5",
@@ -41,7 +39,7 @@
   },
   "dependencies": {},
   "bugs": {
-    "url": "https://github.com/betterliyu/timepicker/issues"
+    "url": "https://github.com/betterliyu/timespinner/issues"
   },
-  "homepage": "https://github.com/betterliyu/timepicker#readme"
+  "homepage": "https://github.com/betterliyu/timespinner#readme"
 }

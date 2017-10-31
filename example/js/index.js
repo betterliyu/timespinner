@@ -1,6 +1,6 @@
 (function () {
   window.onload = function () {
-    var tp = new bwidget.timepicker('#tp', {
+    var tp = new bwidget.timespinner('#tp', {
       width: '300px',
       height: '40px',
       align: 'center',

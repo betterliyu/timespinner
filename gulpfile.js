@@ -7,13 +7,11 @@ var uglify = require('rollup-plugin-uglify')
 var minify = require('uglify-es').minify
 
 var cssminify = require('gulp-minify-css')
-var concat = require('gulp-concat')
-// var uglify1 = require('gulp-uglify')
 var rename = require('gulp-rename')
 
 gulp.task('build', () => {
   return rollup.rollup({
-    input: './src/timepicker.js',
+    input: './src/timespinner.js',
     plugins: [
       eslint({
         throwOnError: true,
@@ -29,15 +27,15 @@ gulp.task('build', () => {
   }).then(bundle => {
     bundle.write({
       format: 'umd',
-      moduleName: 'bwidget.timepicker',
-      dest: './dist/js/bwidget.timepicker.js',
+      moduleName: 'bwidget.timespinner',
+      dest: './dist/js/bwidget.timespinner.js',
       sourceMap: false
     })
   })
 })
 gulp.task('build:min', () => {
   return rollup.rollup({
-    input: './src/timepicker.js',
+    input: './src/timespinner.js',
     plugins: [
       eslint({
         throwOnError: true,
@@ -54,8 +52,8 @@ gulp.task('build:min', () => {
   }).then(bundle => {
     bundle.write({
       format: 'umd',
-      moduleName: 'bwidget.timepicker',
-      dest: './dist/js/bwidget.timepicker.min.js',
+      moduleName: 'bwidget.timespinner',
+      dest: './dist/js/bwidget.timespinner.min.js',
       sourceMap: false
     })
   })

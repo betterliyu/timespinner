@@ -1,5 +1,5 @@
 /**
- * better-widget TimePicker 1.0.0 
+ * better-widget TimeSpinner 1.0.0 
  * License: MIT
  */
 
@@ -12,7 +12,7 @@ var msReg = /^mm(\((\d+)\))?:ss$/
  * @param {string} selector dom query selector.
  * @param {object} options initial options.
  */
-function TimePicker(selector, options) {
+function TimeSpinner(selector, options) {
   var instance = this
   var formatExprShort = /^(\d+):(\d+)$/
   var formatExprLong = /^(\d+):(\d+):(\d+)$/
@@ -43,7 +43,7 @@ function TimePicker(selector, options) {
   //////////////////////////////////
   function generateHtml() {
     element.innerHTML =
-      '<div class="bw-timepicker">'
+      '<div class="bw-timespinner">'
       + '<div class="input-wrap">'
       + '<input class="input" type="text" onpaste="return false;" oncontextmenu="return false;" ondrop="return false;" >'
       + '</div>'
@@ -56,7 +56,7 @@ function TimePicker(selector, options) {
       + '</div>'
       + '</div>'
       + '</div>'
-    element.classList.add('bw-timepicker-wrap')
+    element.classList.add('bw-timespinner-wrap')
   }
 
   function setProperties() {
@@ -155,12 +155,12 @@ function TimePicker(selector, options) {
         set: function (param) {
           widgetProp.disabled = !!param
           if (param) {
-            this.element.querySelector('.bw-timepicker').classList.add('bw-timepicker-disabled')
+            this.element.querySelector('.bw-timespinner').classList.add('bw-timespinner-disabled')
             this.element.querySelector('.input').disabled = true
             this.element.querySelector('.arrow.up').removeEventListener('click', onClick)
             this.element.querySelector('.arrow.down').removeEventListener('click', onClick)
           } else {
-            this.element.querySelector('.bw-timepicker').classList.remove('bw-timepicker-disabled')
+            this.element.querySelector('.bw-timespinner').classList.remove('bw-timespinner-disabled')
             this.element.querySelector('.input').removeAttribute('disabled')
             this.element.querySelector('.arrow.up').addEventListener('click', onClick)
             this.element.querySelector('.arrow.down').addEventListener('click', onClick)
@@ -443,7 +443,7 @@ function TimePicker(selector, options) {
   }
 }
 
-TimePicker.prototype.text2Second = function (arg) {
+TimeSpinner.prototype.text2Second = function (arg) {
   var formatExpr1 = /^(\d+):(\d+)$/, formatExpr2 = /^(\d+):(\d+):(\d+)$/
   var matches
   if (!isString(arg)) {
@@ -475,7 +475,7 @@ TimePicker.prototype.text2Second = function (arg) {
   }
 
 }
-TimePicker.prototype.second2Text = function (num) {
+TimeSpinner.prototype.second2Text = function (num) {
   var m1, m2, m3
   if (num < 0) {
     throw new Error('arg can not be negative')
@@ -544,4 +544,4 @@ function prefixInteger(num, n) {
   return (Array(n).join(0) + num).slice(-n)
 }
 
-export default TimePicker
+export default TimeSpinner

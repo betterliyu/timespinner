@@ -1,1 +1,1 @@
-## bwidget-timepicker 
+## bwidget-timespinner 

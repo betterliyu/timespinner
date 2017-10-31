@@ -1,1 +1,1 @@
-module.exports=require('./src/timepicker.js')
+module.exports=require('./src/timespinner.js')
