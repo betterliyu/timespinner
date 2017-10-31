@@ -76,9 +76,10 @@ function TimeSpinner(selector, options) {
         },
         set: function (param) {
           if (isInteger(param)) {
-            // var preV = widgetProp.second
+            var preV = widgetProp.second
             var value = this.second2Text(param), matches
             widgetProp.second = param
+
             widgetProp.element.querySelector('.input').value = value
 
             if (widgetProp.type === 'hh:mm:ss') {
@@ -90,7 +91,7 @@ function TimeSpinner(selector, options) {
               matches = value.match(formatExprShort)
               widgetProp.partial = [+matches[1], +matches[2]]
             }
-            // widgetProp.onValueChanged({ preValue: preV, newValue: param })
+            if (preV !== param) widgetProp.onValueChanged({ preValue: preV, newValue: param })
           } else {
             throw new Error('second must be a integer')
           }
@@ -387,7 +388,7 @@ function TimeSpinner(selector, options) {
         instance.second = widgetProp.second
       }
     }
-    setTimeout(function() {
+    setTimeout(function () {
       focusSelection()
     }, 0)
   }
