@@ -29,6 +29,6 @@
 [Document][3]
 
 
-  [1]: http://ouvy2mvib.bkt.clouddn.com/2017-10-31_15h36_05.png
+  [1]: https://github.com/betterliyu/betterliyu-blog/raw/gh-pages/2017/11/02/bwidget-timespinner%E9%85%8D%E7%BD%AE%E6%96%87%E6%A1%A3/2017-10-31_15h36_05.png
   [2]: https://github.com/betterliyu/timespinner
-  [3]: http://www.betterliyu.site/2017/11/02/bwidget-timespinner%E9%85%8D%E7%BD%AE%E6%96%87%E6%A1%A3/
+  [3]: https://blog.betterliyu.site/2017/11/02/bwidget-timespinner%E9%85%8D%E7%BD%AE%E6%96%87%E6%A1%A3/
