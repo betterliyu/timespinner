@@ -13,7 +13,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 - Change README.md
 - Change package info
 
-## [1.0.1] - 2017-10-31
+## [1.0.1] - 2017-11-03
 ### Added
 - Add hook *valueChanged*
 
